@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class Whiteboard : MonoBehaviour
 {
@@ -9,12 +9,6 @@ public class Whiteboard : MonoBehaviour
     {
         if (other.TryGetComponent<XRGrabInteractable>(out XRGrabInteractable interactable))
             currentInteractable = interactable;
-
-        // if (interactable != null)
-        // {
-        //     currentInteractable = interactable;
-        //     currentInteractable.selectExited.AddListener(OnObjectReleased);
-        // }
     }
 
     private void OnTriggerStay(Collider other)
@@ -25,23 +19,8 @@ public class Whiteboard : MonoBehaviour
         if (!currentInteractable.isSelected)
         {
             currentInteractable.transform.SetParent(this.transform);
-            currentInteractable.TryGetComponent<Rigidbody>().enabled = false;
+            currentInteractable.gameObject.GetComponent<Rigidbody>().useGravity = false;
+            currentInteractable = null;
         }
-
-        // if (currentInteractable != null && other.GetComponentInParent<XRGrabInteractable>() == currentInteractable)
-        // {
-        //     currentInteractable.selectExited.RemoveListener(OnObjectReleased);
-        //     currentInteractable = null;
-        // }
     }
-
-    // private void OnObjectReleased(SelectExitEventArgs args)
-    // {
-    //     Debug.Log("Object released inside the trigger box!");
-    //
-    //     // Execute your placement logic here
-    //
-    //     // currentInteractable.selectExited.RemoveListener(OnObjectReleased);
-    //     // currentInteractable = null;
-    // }
 }
