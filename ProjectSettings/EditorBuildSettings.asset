@@ -4,7 +4,27 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
+<<<<<<< HEAD
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: ac3ef2d4c5492f54c9424ba508504781
+  - enabled: 1
+    path: Assets/Scenes/PlayScene.unity
+    guid: 247029585921bf243aac57f836872411
+  - enabled: 1
+    path: Assets/Scenes/TutorialScene.unity
+    guid: 159f3137c03fe184b9ad0170aa3a1d97
+  - enabled: 0
+    path: Assets/Scenes/coba.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2de2f3b5b979f92409c3f69cd3d5dee9, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: cac4218e1fb8ece4bbc212f5fcb1f925, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: f8089fb6fbff4da489ea7557a6c3a164, type: 2}
+=======
   m_Scenes: []
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 289c1b55c9541489481df5cc06664110, type: 3}
   m_UseUCBPForAssetBundles: 0
+>>>>>>> e89dd4fe883ce29fe8c3bad7d7a92b8f57be152d

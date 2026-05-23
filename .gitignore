@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+UserSettings/
+MemoryCaptures/
+
+Assets/AssetStoreTools*
+=======
 /[Ll]ibrary/
 /[Tt]emp/
 /[Oo]bj/
@@ -72,3 +84,4 @@ crashlytics-build.properties
 
 .editorconfig
 omnisharp.json
+>>>>>>> e89dd4fe883ce29fe8c3bad7d7a92b8f57be152d
