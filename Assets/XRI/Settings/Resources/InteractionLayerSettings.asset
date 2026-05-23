@@ -11,9 +11,16 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 191492db6e452eb468b95433ec162164, type: 3}
   m_Name: InteractionLayerSettings
+<<<<<<< HEAD
   m_EditorClassIdentifier: 
   m_LayerNames:
   - Default
+=======
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.InteractionLayerSettings
+  m_LayerNames:
+  - Default
+  - Tombol
+>>>>>>> e89dd4fe883ce29fe8c3bad7d7a92b8f57be152d
   - 
   - 
   - 
@@ -43,5 +50,9 @@ MonoBehaviour:
   - 
   - 
   - 
+<<<<<<< HEAD
   - 
   - 
+=======
+  - Teleport
+>>>>>>> e89dd4fe883ce29fe8c3bad7d7a92b8f57be152d
